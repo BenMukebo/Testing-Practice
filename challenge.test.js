@@ -1,4 +1,4 @@
-const { stringLength, reverseString } = require('./challenge');
+const { stringLength, reverseString, newCalc } = require('./challenge');
 
 test('Should output length', () => {
     const text = stringLength('ben kas')
@@ -10,6 +10,24 @@ test('Reverse the string', () => {
     const texts = reverseString('ben-kas');
   expect(texts).toBe('sak-neb');
 });
+
+
+// CallBack function
+
+describe('My calculator action', () => {
+    test('Add calculator', () => {
+      expect(newCalc.add(4, 2)).toBe(6);
+    });
+  
+    test('remove calculator', () => {
+      expect(newCalc.subtract(4, 2)).toBe(2);
+    });
+    test('multiple calculator', () => {
+        expect(newCalc.multiply(4, 2)).toBe(8);
+      });
+  });
+
+
 
 
 
