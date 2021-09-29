@@ -7,6 +7,12 @@ exports.stringLength = (str) => {
  throw new Error('you are using the wrong JDK');
 };
 
+// Task 2
+exports.reverseString = (str) => {
+    const reverseStr = str.split('').reverse().join('');
+  return reverseStr;
+};
+  
 
 
 

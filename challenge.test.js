@@ -1,8 +1,14 @@
-const { stringLength } = require('./challenge');
+const { stringLength, reverseString } = require('./challenge');
 
 test('Should output length', () => {
     const text = stringLength('ben kas')
   expect(text).toBe('The length is: 7');
+});
+
+console.log(reverseString('ben-kas'));
+test('Reverse the string', () => {
+    const texts = reverseString('ben-kas');
+  expect(texts).toBe('sak-neb');
 });
 
 
