@@ -4,7 +4,7 @@ exports.stringLength = (str) => {
     return `The length is: ${str.length}`;
   }
 
- throw new Error('you are using the wrong JDK');
+ throw new Error('Those conditions are not met');
 };
 
 // Task 2
@@ -34,7 +34,7 @@ class Calculator {
   }
 
   divide(){
-    
+    return a/b;
   }
 }
 
@@ -43,8 +43,21 @@ const newCalc = new Calculator();
 exports.newCalc = newCalc ;
 
 
+// Task 4
+
+
+exports.capitalizeString = (str) => {
+  const capitalize = str.charAt(0).toUpperCase() + str.slice(1);
+  return capitalize;
+};
+
+
+
+
+
 
 // function sum(a, b) {
 //     return a + b;
 //   }
 //   module.exports = sum;
+
